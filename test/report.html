@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        
+    <title>Document</title>
+    <link href={{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }} rel="stylesheet" type="text/css" />
+<style>
+  .datatable {
+  table-layout: fixed !important;
+  width: 600px; font-size:10px !important;
+  text-align: left !important;
+}
+    @media print{
+        .pagebreak{page-break-before: always;}
+    }
+</style>
+    
+</head>
+<body >
+    <div class="container" style="width: 210mm;">
+        <!-- Content here -->
+        <!-- company logo on left    -->
+        <!-- report date generated on right -->
+        <!-- page 1 -->
+        <!-- project header -->
+        <!-- project description -->
+        <div id = "test" class="report-header page">
+            <div class="row" style="padding-top: 30px;">
+                <div class="col-sm company-logo text-start">
+                    <h3>Logo</h3>
+                </div>
+                <div class="col-sm">
+                    
+                </div>
+                <div class="col-sm report-generated-date text-end">
+                    
+                    <h3>Date</h3>
+                </div>
+            </div>
+            <div class="row" style="padding-top: 200px;">
+                <div class="col-sm">
+                </div>
+                <div class="col-sm project-title">
+                    <h1 id='project_name'></h1>
+                </div>
+                <div class="col-sm">                    
+                </div>
+            </div>
+            <div class="row" style="padding-top: 20px;">
+                <div class="col-sm col-lg-2">
+                </div>
+                <div class="col-sm project-title ">
+                    <h4 id='project_description'></h4>
+                </div>
+                <div class="col-sm col-lg-2">                    
+                </div>
+            </div>
+        </div>
+
+        <!-- page 2 -->
+        <!-- total base -->
+        <!-- total variable analysed -->
+        <!-- correlation value Table -->
+        <div class="page pagebreak" style="padding-top: 400px;">
+            <h3>Analysed correlation</h3>
+            <table class="datatable table table-bordered" id="tb_cor">
+                <thead>
+                  <tr>
+                    <th scope="col">Sr.No</th>
+                    <th scope="col">Variable Name</th>
+                    <th scope="col">Correlation Value</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                  
+                </tbody>
+              </table>
+        </div>
+
+        <!-- page 3 -->
+        <!-- chi square test value Table -->
+        <!-- woe value Table -->
+        <div class="page pagebreak" style="padding-top: 100px;">
+            <h3>Analysed ChiSquare Test</h3>
+            <table class="datatable table table-bordered" id="tb_cst">
+                <thead>
+                    <tr>
+                        <th scope="col">Sr.No</th>
+                        <th scope="col">Variable Name</th>
+                        <th scope="col">Value</th>
+                      </tr>
+                </thead>
+                <tbody>
+                 
+                </tbody>
+              </table>
+              <h3>Analysed Weight of Evidence Test</h3>
+            <table  class="datatable table table-bordered" id="tb_woe">
+                <thead>
+                  <tr>
+                    <th scope="col">Sr.No</th>
+                    <th scope="col">Variable Name</th>
+                    <th scope="col">Value</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                 
+                </tbody>
+              </table>
+        </div>
+
+
+        <!-- page 4 -->
+        <!-- top 20 segment -->
+        <div class="page pagebreak" style="padding-top: 100px;">
+            <h3>Top 10 Segments Analysed</h3>
+            <table class="datatable table table-bordered" id = "tb_sga">
+                <thead>
+                  <tr>
+                    <th scope="col">Sr.No</th>
+                    <th scope="col">Segments</th>                    
+                    <th scope="col">Customer Count</th>                    
+                    <th scope="col">Conversion Rate</th>
+                    <th scope="col">BAU</th>
+                    <th scope="col">Lift</th>
+                    <th scope="col">Proportion</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                </tbody>
+              </table>
+            
+        </div>
+
+
+        <!-- page 5 -->
+        <!-- univariate analysis -->
+        <div class="imgunv">
+            <h3>Univariate Analysis</h3>
+          
+        </div>
+
+
+        <div class="imgbv">
+            <h3>Bivariate Analysis</h3>
+           
+        </div>
+        
+
+    </div>
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+<!-- page 5 -->
+<!-- univariate analysis -->
+
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+<script src={{ url_for('static', filename='plotly/plotly-latest.min.js') }}></script>
+
+<script src={{ url_for('static', filename='bootstrap/js/jquery-3.6.0.min.js') }}></script>
+<script src={{ url_for('static', filename='js/config.js') }}></script>
+<script src={{ url_for('static', filename='js/report.js') }}></script>
+<script src={{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}></script>
+
+</html>
+

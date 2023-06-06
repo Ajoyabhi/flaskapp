@@ -1,0 +1,310 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <!--begin::Content-->
+    <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+        <!--begin::Toolbar-->
+        <div class="toolbar bg-transparent pt-6 mb-5" id="kt_toolbar">
+            <!--begin::Container-->
+            <div id="kt_toolbar_container" class="container-xxl d-flex flex-stack">
+                <!--begin::Page title-->
+                <div data-kt-swapper="true" data-kt-swapper-mode="prepend"
+                     data-kt-swapper-parent="{default: '#kt_content_container', 'lg': '#kt_toolbar_container'}"
+                     class="page-title d-flex flex-column align-items-start me-3 mb-5 mb-lg-0">
+                    <!--begin::Title-->
+                    <h1 class="d-flex text-dark fw-bolder fs-3 flex-column mb-0">Analytics Report
+                        <!--begin::Description-->
+                        <span class="text-muted fs-7 fw-bold mt-2"></span>
+                        <!--end::Description--></h1>
+                    <!--end::Title-->
+                </div>
+                <!--end::Page title-->
+                <!--begin::Actions-->
+
+                <!--end::Actions-->
+            </div>
+            <!--end::Container-->
+        </div>
+        <!--end::Toolbar-->
+        <!--begin::Post-->
+        <div class="post d-flex flex-column-fluid" id="kt_post">
+            <!--begin::Container-->
+            <div id="kt_content_container" class="container-xxl">
+                <!--begin::Row-->
+
+                <!-- Information Table begins-->
+                <div class="row g-5 g-xl-10 mb-5 mb-xl-10">
+                    <!--begin::Col-->
+                    <div class="col-xl-3">
+                        <!--begin::Card widget 3-->
+                        <div class="card card-flush bgi-no-repeat bgi-size-contain bgi-position-x-end h-xl-100" style="background-color: #F1416C;background-image:url('/metronic8/demo1/assets/media/svg/shapes/wave-bg-red.svg')">
+                            <!--begin::Header-->
+                            
+                            <!--end::Header-->
+                            <!--begin::Card body-->
+                            <div class="card-body d-flex align-items-end mb-3">
+                                <!--begin::Info-->
+                                <div class="d-flex align-items-center">
+                                    <span class="fs-4hx text-white fw-bold me-6" id="base-size-card"></span>
+                                    <div class="fw-bold fs-6 text-white">
+                                        <span class="d-block">Base</span>
+                                        <span class="">Size</span>
+                                    </div>
+                                </div>
+                                <!--end::Info-->
+                            </div>
+                            <!--end::Card body-->
+                            <!--begin::Card footer-->
+                            <div class="card-footer" style="border-top: 1px solid rgba(255, 255, 255, 0.3);background: rgba(0, 0, 0, 0.15);">
+                                <!--begin::Progress-->
+                                <div class="fw-bold text-white py-2">
+                                    <span class="fs-1 d-block">BASE SIZE</span>
+                                </div>
+                                <!--end::Progress-->
+                            </div>
+                            <!--end::Card footer-->
+                        </div>
+                        <!--end::Card widget 3-->
+                    </div>
+                    <!--end::Col-->
+                    <!--begin::Col-->
+                    <div class="col-xl-3">
+                        <!--begin::Card widget 3-->
+                        <div class="card card-flush bgi-no-repeat bgi-size-contain bgi-position-x-end h-xl-100" style="background-color: #7239EA;background-image:url('/metronic8/demo1/assets/media/svg/shapes/wave-bg-purple.svg')">
+                            <!--begin::Header-->
+                            <div class="card-header pt-5 mb-3">
+                                <!--begin::Icon-->
+                                <div class="d-flex flex-center rounded-circle h-80px w-80px" style="border: 1px dashed rgba(255, 255, 255, 0.4);background-color: #7239EA">
+                                    <i class="fonticon-outgoing-call text-white fs-2qx lh-0"></i>
+                                </div>
+                                <!--end::Icon-->
+                            </div>
+                            <!--end::Header-->
+                            <!--begin::Card body-->
+                            <div class="card-body d-flex align-items-end mb-3">
+                                <!--begin::Info-->
+                                <div class="d-flex align-items-center">
+                                    <span class="fs-4hx text-white fw-bold me-6" id="base-size-card2"></span>
+                                    <div class="fw-bold fs-6 text-white">
+                                        <span class="d-block">Variable</span>
+                                        <span class="">Mapped</span>
+                                    </div>
+                                </div>
+                                <!--end::Info-->
+                            </div>
+                            <!--end::Card body-->
+                            <!--begin::Card footer-->
+                            <div class="card-footer" style="border-top: 1px solid rgba(255, 255, 255, 0.3);background: rgba(0, 0, 0, 0.15);">
+                                <!--begin::Progress-->
+                                <div class="fw-bold text-white py-2">
+                                    <span class="fs-1 d-block">VARIABLE MAPPED</span>
+                                </div>
+                                <!--end::Progress-->
+                            </div>
+                            <!--end::Card footer-->
+                        </div>
+                        <!--end::Card widget 3-->
+                    </div>
+                    <!--end::Col-->
+                    <!--begin::Col-->
+                    
+                    <!--end::Col-->
+                </div>
+                
+
+
+
+                <!-- Information Table end-->
+
+
+                <!-- variable table start -->
+
+                <div class="col-xl">
+                    <!--begin::List Widget 3-->
+                    <div class="card card-xl-stretch mb-5 mb-xl-8">
+                        <!--begin::Header-->
+                        <div class="card-header border-0">
+                            <h3 class="card-title fw-bold text-dark">Variable Mapped</h3>
+                            <div class="card-toolbar">
+                                <!--begin::Menu-->
+                                <button type="button" class="btn btn-sm btn-icon btn-color-primary btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                                    <!--begin::Svg Icon | path: icons/duotune/general/gen024.svg-->
+                                    <span class="svg-icon svg-icon-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <rect x="5" y="5" width="5" height="5" rx="1" fill="currentColor"></rect>
+                                                <rect x="14" y="5" width="5" height="5" rx="1" fill="currentColor" opacity="0.3"></rect>
+                                                <rect x="5" y="14" width="5" height="5" rx="1" fill="currentColor" opacity="0.3"></rect>
+                                                <rect x="14" y="14" width="5" height="5" rx="1" fill="currentColor" opacity="0.3"></rect>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    <!--end::Svg Icon-->
+                                </button>
+                                <!--begin::Menu 3-->
+                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-semibold w-200px py-3" data-kt-menu="true">
+                                    <!--begin::Heading-->
+                                    <div class="menu-item px-3">
+                                        <div class="menu-content text-muted pb-2 px-3 fs-7 text-uppercase">Payments</div>
+                                    </div>
+                                    <!--end::Heading-->
+                                    <!--begin::Menu item-->
+                                    <div class="menu-item px-3">
+                                        <a href="#" class="menu-link px-3">Create Invoice</a>
+                                    </div>
+                                    <!--end::Menu item-->
+                                    <!--begin::Menu item-->
+                                    <div class="menu-item px-3">
+                                        <a href="#" class="menu-link flex-stack px-3">Create Payment 
+                                        <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" aria-label="Specify a target name for future usage and reference" data-kt-initialized="1"></i></a>
+                                    </div>
+                                    <!--end::Menu item-->
+                                    <!--begin::Menu item-->
+                                    <div class="menu-item px-3">
+                                        <a href="#" class="menu-link px-3">Generate Bill</a>
+                                    </div>
+                                    <!--end::Menu item-->
+                                    <!--begin::Menu item-->
+                                    <div class="menu-item px-3" data-kt-menu-trigger="hover" data-kt-menu-placement="right-end">
+                                        <a href="#" class="menu-link px-3">
+                                            <span class="menu-title">Subscription</span>
+                                            <span class="menu-arrow"></span>
+                                        </a>
+                                        <!--begin::Menu sub-->
+                                        <div class="menu-sub menu-sub-dropdown w-175px py-4">
+                                            <!--begin::Menu item-->
+                                            <div class="menu-item px-3">
+                                                <a href="#" class="menu-link px-3">Plans</a>
+                                            </div>
+                                            <!--end::Menu item-->
+                                            <!--begin::Menu item-->
+                                            <div class="menu-item px-3">
+                                                <a href="#" class="menu-link px-3">Billing</a>
+                                            </div>
+                                            <!--end::Menu item-->
+                                            <!--begin::Menu item-->
+                                            <div class="menu-item px-3">
+                                                <a href="#" class="menu-link px-3">Statements</a>
+                                            </div>
+                                            <!--end::Menu item-->
+                                            <!--begin::Menu separator-->
+                                            <div class="separator my-2"></div>
+                                            <!--end::Menu separator-->
+                                            <!--begin::Menu item-->
+                                            <div class="menu-item px-3">
+                                                <div class="menu-content px-3">
+                                                    <!--begin::Switch-->
+                                                    <label class="form-check form-switch form-check-custom form-check-solid">
+                                                        <!--begin::Input-->
+                                                        <input class="form-check-input w-30px h-20px" type="checkbox" value="1" checked="checked" name="notifications">
+                                                        <!--end::Input-->
+                                                        <!--end::Label-->
+                                                        <span class="form-check-label text-muted fs-6">Recuring</span>
+                                                        <!--end::Label-->
+                                                    </label>
+                                                    <!--end::Switch-->
+                                                </div>
+                                            </div>
+                                            <!--end::Menu item-->
+                                        </div>
+                                        <!--end::Menu sub-->
+                                    </div>
+                                    <!--end::Menu item-->
+                                    <!--begin::Menu item-->
+                                    <div class="menu-item px-3 my-1">
+                                        <a href="#" class="menu-link px-3">Settings</a>
+                                    </div>
+                                    <!--end::Menu item-->
+                                </div>
+                                <!--end::Menu 3-->
+                                <!--end::Menu-->
+                            </div>
+                        </div>
+                        <!--end::Header-->
+                        <!--begin::Body-->
+                        <div class="card-body pt-2 variable-list-body">
+                            
+                        </div>
+                        <!--end::Body-->
+                    </div>
+                    <!--end:List Widget 3-->
+                </div>
+
+                <!-- variable table ends -->
+                
+
+
+                
+                
+
+                <div class="univariate maincontainer row g-5 g-xl-10 mb-5 mb-xl-10">
+                    <h1>Distribution</h1>
+                    <!--begin::Col-->
+
+                    <!--end::Col-->
+                    <!--begin::Col-->
+
+                    <!--end::Col-->
+                </div>
+
+
+                <!-- countplot graph div start -->
+                
+                <div id="kt_app_content_container" class="app-container container-xxl">
+                    <!--begin::Row-->
+                    <div class="row g-5 g-xl-8 count-plot-main">
+                        
+                        
+                    </div>
+                    <!--end::Row-->                    
+                    
+                </div>
+
+
+
+
+
+                <!-- count plot div end -->
+
+
+
+
+
+                
+
+                
+                <!--end::Row-->
+                <!--begin::Col-->
+
+                <!--end::Row-->
+                <!--begin::Col-->
+
+                <!--end::Row-->
+            </div>
+            <!--end::Container-->
+        </div>
+        <!--end::Post-->
+    </div>
+    <!--end::Content-->
+
+
+{% endblock %}
+{% block custom_script %}
+    <script src={{ url_for('static', filename='plotly/plotly-latest.min.js') }}></script>
+    <script src={{ url_for('static', filename='js/profiling_analytics.js') }}></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+
+    <!-- <script src={{ url_for('static', filename='js/test.js') }}></script> -->
+
+<!-- {#    Backup  #}
+{#    	<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>#}
+{#    	<script src="https://cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>#}
+{#    	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>#}
+{#    	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>#}
+{#    	<script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>#}
+{#    Backup  #}
+    <script src={{ url_for('static', filename="assets/plugins/custom/datatables/datatables.bundle.js") }}></script>
+    <script src={{ url_for('static', filename="assets/js/custom/apps/ecommerce/reports/sales/sales.js") }}></script>
+{#    <script src={{ url_for('static', filename='js/pdf.js') }}></script>#} -->
+
+{% endblock %}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Analysis Progress</title>
+    <style>
+      /* Add your custom CSS styles here */
+      .centered {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .message {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="centered">
+      <h2>Analysis Progress</h2>
+      <div id="progress"></div>
+      <br />
+      <div id="result" style="display: none">
+        <div class="message">Analysis completed!</div>
+        <div class="message">Download the processed data:</div>
+        <a
+          href="{{ url_for('download', filename='final_df.csv', steps=steps) }}"
+          id="downloadLink"
+          download
+          >Download</a
+        >
+      </div>
+      <script>
+        // Update the progress div with the current step
+        function updateProgress(step) {
+          var progressDiv = document.getElementById("progress");
+          progressDiv.innerHTML +=
+            "<div class='message'>" +
+            step +
+            " - Started at: " +
+            new Date().toLocaleTimeString() +
+            "</div>";
+          progressDiv.scrollTop = progressDiv.scrollHeight;
+        }
+
+        // Show the result div after analysis completion
+        function showResult() {
+          <!-- document.getElementById("progress").style.display = "none"; -->
+          document.getElementById("result").style.display = "block";
+        }
+      </script>
+      <script>
+        // Get the analysis progress steps from URL query parameter
+        var urlParams = new URLSearchParams(window.location.search);
+        var steps = urlParams.get("steps");
+
+        if (steps) {
+          // Display the analysis progress steps
+          var progressDiv = document.getElementById("progress");
+          progressDiv.innerHTML = steps;
+
+          // Show the result div if the analysis is already completed
+          if (steps.indexOf("Saving the result") !== -1) {
+            showResult();
+          }
+        } else {
+          // Simulate analysis progress (for demonstration purposes)
+          updateProgress("Step 1: Unzipping the file");
+          setTimeout(function () {
+            updateProgress("Step 2: Merging data frames");
+            setTimeout(function () {
+              updateProgress("Step 3: Calculating col_3");
+              setTimeout(function () {
+                updateProgress("Step 4: Saving the result");
+                setTimeout(function () {
+                  showResult();
+                }, 1000);
+              }, 1000);
+            }, 1000);
+          }, 1000);
+        }
+      </script>
+    </div>
+  </body>
+</html>

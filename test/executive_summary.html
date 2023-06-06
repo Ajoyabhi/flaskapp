@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        
+    <title>Document</title>
+    <link href={{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }} rel="stylesheet" type="text/css" />
+<style>
+  .datatable {
+  table-layout: fixed !important;
+  width: 600px; font-size:10px !important;
+  text-align: left !important;
+}
+    @media print{
+        .pagebreak{page-break-before: always;}
+    }
+</style>
+    
+</head>
+<body >
+    <div class="container">
+        
+
+        <!-- page 2 -->
+        <!-- total base -->
+        <!-- total variable analysed -->
+        <!-- correlation value Table -->
+        <div class="page pagebreak">
+            <h3>Executive Summary</h3>
+            <table class="datatable table table-bordered" id="tb_cor">
+                <thead>
+                  <tr>
+                    <th scope="col">Sr.No</th>
+                    <th scope="col">Narrative</th>                    
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                  
+                </tbody>
+              </table>
+        </div>
+
+        
+        
+
+    </div>
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+<!-- page 5 -->
+<!-- univariate analysis -->
+
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+<script src={{ url_for('static', filename='plotly/plotly-latest.min.js') }}></script>
+
+<script src={{ url_for('static', filename='bootstrap/js/jquery-3.6.0.min.js') }}></script>
+<script src={{ url_for('static', filename='js/config.js') }}></script>
+<script src={{ url_for('static', filename='js/executive_summary.js') }}></script>
+<script src={{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}></script>
+
+</html>
+

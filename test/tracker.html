@@ -1,0 +1,92 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+                <!--begin::Toolbar-->
+                <div class="toolbar bg-transparent pt-6 mb-5" id="kt_toolbar">
+                    <!--begin::Container-->
+
+                    <!--end::Container-->
+                </div>
+                <!--end::Toolbar-->
+                <!--begin::Post-->
+                <div class="post d-flex flex-column-fluid" id="kt_post">
+                    <!--begin::Container-->
+                    <div id="kt_content_container" class="container-xxl">
+
+                        <!--begin::Home card-->
+                        <div class="card">
+                            <!--begin::Body-->
+                            <div class="card-body p-lg-20">
+                                <!--begin::Section-->
+
+                                <!--end::Section-->
+                                <!--begin::Section-->
+                                <div class="mb-17">
+                                    <!--begin::Content-->
+                                    <div class="d-flex flex-stack mb-5">
+                                        <!--begin::Title-->
+                                        <h3 class="fs-2x fw-bolder mb-0">Data Processing</h3>
+                                        <!--end::Title-->
+                                        <!--begin::Link-->
+                                        <!-- <a href="#" class="fs-6 fw-bold link-primary">View All Videos</a> -->
+                                        <!--end::Link-->
+                                    </div>
+                                    <!--end::Content-->
+                                    <!--begin::Separator-->
+                                    <!-- <div class="separator separator-dashed mb-9"></div> -->
+                                    <!--end::Separator-->
+                                    <!--begin::Row-->
+                                    <div class="row g-10">
+                                        <!--begin::Col-->
+                                        <div class="col-md-12">
+
+                                            <table id="processTable" class="table table-row-dashed table-row-gray-300 align-middle gs-0 gy-4">
+                                                <thead>
+                                                <tr class="fw-bolder text-muted">
+                                                    <th class="min-w-100px text-end">Actions</th>
+                                                </tr>
+                                                </thead>
+                                            <tbody>
+
+                                            </tbody>
+                                        </table>
+                                            <!--begin::Feature post-->
+                                            <!--end::Feature post-->
+                                        </div>
+                                        <!--end::Col-->
+                                        <!--begin::Col-->
+                                        <div class="col-md-4">
+                                            <!--begin::Feature post-->
+                                        </div>
+                                        <!--end::Col-->
+                                        <!--begin::Col-->
+                                        <div class="col-md-4">
+                                            <!--begin::Feature post-->
+                                            <!--end::Feature post-->
+                                        </div>
+                                        <!--end::Col-->
+                                    </div>
+                                    <!--end::Row-->
+                                </div>
+                                <!--end::Section-->
+                                <!--begin::Section-->
+                                <!--end::Section-->
+                                <!--begin::latest instagram-->
+                                <!--end::latest instagram-->
+                                <a href="#" class="downloaddata btn btn-primary er fs-6 px-8 py-4" style="display: none">Download</a>
+                            </div>
+                            <!--end::Body-->
+                        </div>
+                        <!--end::Home card-->
+                    </div>
+                    <!--end::Container-->
+                </div>
+                <!--end::Post-->
+            </div>
+
+
+{% endblock %}
+{% block custom_script %}
+    <script src={{ url_for('static', filename='js/tracker.js') }}></script>
+{% endblock %}
